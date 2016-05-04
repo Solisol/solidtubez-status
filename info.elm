@@ -1,6 +1,9 @@
-import Html exposing (text)
+import Graphics.Element exposing (..)
 
+main : Element
 main =
-  text "Information about solidtubez.com:
-The server will be down from 5/5-2016 and undefined time space due to change of server location.
-Information will be available here, when possible."
+  flow down
+    [ show "Information about solidtubez.com:"
+    , show "The server will be down from 5/5-2016 and undefined time space due to change of server location."
+    , show "Information will be available here, when possible."
+    ]
